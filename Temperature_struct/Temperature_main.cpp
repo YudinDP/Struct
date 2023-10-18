@@ -1,4 +1,4 @@
-﻿#include "Tempareture.h"
+#include "Tempareture.h"
 #include <iostream>
 using namespace std;
 int main()
