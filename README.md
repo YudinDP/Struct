@@ -4,6 +4,8 @@
 
 диаграммы ADT и UML соответственно дополнены
 
+
+## UML Температура
 ![image](https://github.com/YudinDP/Struct/assets/146605173/a5f5c723-4043-4987-9870-2ee61dfab2fc)
 
 
