@@ -8,7 +8,7 @@ Temperature::Temperature() {
 }
 
 ///геттер градусов - базовый
-double Temperature::Get_degrees() {
+double Temperature::Get_degreesС() {
 	if (measure == "C") {
 		return degrees;
 	}
@@ -47,7 +47,7 @@ double Temperature::Get_degreesK() {
 }
 
 ///сеттер градусов в Цельсиях
-void Temperature::Set_degrees(double new_degrees) {
+void Temperature::Set_degreesС(double new_degrees) {
 	if (new_degrees < -273.15)
 		throw std::invalid_argument("Некорректный аргумент");
 	degrees = new_degrees;
@@ -71,7 +71,7 @@ void Temperature::Set_degreesK(double new_degrees) {
 }
 
 ///изменение градусов на change единиц
-void Temperature::Change_degrees(double change) {
+void Temperature::Add_degrees(double change) {
 	if (((measure == "C") && (degrees + change < -273.15)) || ((measure == "F") && (degrees + change < -459.67)) || ((measure == "K") && (degrees + change < 0)))
 		throw std::invalid_argument("Некорректный аргумент");
 	degrees = degrees + change;

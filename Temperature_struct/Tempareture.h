@@ -13,8 +13,8 @@ public:
 	//конструктор
 	Temperature();
 
-	///геттер градусов - базовый
-	double Get_degrees();
+	///геттер градусов - базовый(в цельсиях)
+	double Get_degreesС();
 
 	///геттер градусов - Фаррингейты
 	double Get_degreesF();
@@ -23,7 +23,7 @@ public:
 	double Get_degreesK();
 
 	///сеттер градусов
-	void Set_degrees(double new_degrees);
+	void Set_degreesС(double new_degrees);
 
 	///сеттер градусов в Фарренгейтах
 	void Set_degreesF(double new_degrees);
@@ -32,5 +32,5 @@ public:
 	void Set_degreesK(double new_degrees);
 	
 	///изменение градусов на change единиц
-	void Change_degrees(double change);
+	void Add_degrees(double change);
 };
