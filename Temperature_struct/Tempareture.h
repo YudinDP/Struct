@@ -1,17 +1,20 @@
 #pragma once
 #include <string>
+//author Yudin
 using namespace std;
 ///класс - температура
 class Temperature {
 private:
 	//поля
 	double degrees;///поле - градусы(по умолчанию в Цельсиях)
-	std::string measure;  ///поле - мера измерения градусов, нужна чтобы программа понимала с какой мерой измерения она сейчас работает
+
+	char measure;  ///поле - мера измерения градусов, нужна чтобы программа понимала с какой мерой измерения она сейчас работает
 	// C - цельсии  F - фаренгейты  K - кельвины
 
 public:
 	//конструктор
-	Temperature();
+	Temperature(unsigned int = 3, char = 'C');
+
 
 	///геттер градусов - базовый(в цельсиях)
 	double Get_degreesС();
@@ -22,7 +25,7 @@ public:
 	///геттер градусов - Кельвины
 	double Get_degreesK();
 
-	///сеттер градусов
+	///сеттер градусов в Цельсиях(стандартный)
 	void Set_degreesС(double new_degrees);
 
 	///сеттер градусов в Фарренгейтах
@@ -33,4 +36,10 @@ public:
 	
 	///изменение градусов на change единиц
 	void Add_degrees(double change);
+
+	//возвращает нынешнюю меру измерения
+	std::string Output();
 };
+
+	//блок с assert-ами, проверяет все функции работы с классом
+	void Test_Temp();
