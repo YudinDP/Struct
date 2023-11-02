@@ -13,7 +13,8 @@
 -немного дополнена документация
 
 ## UML Температура
-![image](https://github.com/YudinDP/Struct/assets/146605173/e7eff61b-23f3-4820-b6b9-00cd89b65cc5)
+![image](https://github.com/YudinDP/Struct/assets/146605173/3faa77a1-5711-404e-a653-9ef81d43541c)
+
 
 
 
