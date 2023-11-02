@@ -2,6 +2,7 @@
 #include <string>
 //author Yudin
 using namespace std;
+
 ///класс - температура
 class Temperature {
 private:
@@ -12,7 +13,7 @@ private:
 	// C - цельсии  F - фаренгейты  K - кельвины
 
 public:
-	//конструктор
+	//конструктор с нач.значениями
 	Temperature(unsigned int = 3, char = 'C');
 
 
@@ -24,6 +25,9 @@ public:
 
 	///геттер градусов - Кельвины
 	double Get_degreesK();
+
+	///геттер меры измерения
+	char Get_measure();
 
 	///сеттер градусов в Цельсиях(стандартный)
 	void Set_degreesС(double new_degrees);
@@ -37,7 +41,7 @@ public:
 	///изменение градусов на change единиц
 	void Add_degrees(double change);
 
-	//возвращает нынешнюю меру измерения
+	//возвращает значение температуры вместе с нынешней мерой измерения
 	std::string Output();
 };
 
